@@ -1,0 +1,210 @@
+[
+    {
+      "suit": "hearts",
+      "path":"/cards/2H.png","value": 2
+    },
+    {
+      "suit": "hearts",
+      "path":"/cards/3H.png","value": 3
+    },
+    {
+      "suit": "hearts",
+      "path":"/cards/4H.png","value": 4
+    },
+    {
+      "suit": "hearts",
+      "path":"/cards/5H.png","value": 5
+    },
+    {
+      "suit": "hearts",
+      "path":"/cards/6H.png","value": 6
+    },
+    {
+      "suit": "hearts",
+      "path":"/cards/7H.png","value": 7
+    },
+    {
+      "suit": "hearts",
+      "path":"/cards/8H.png","value": 8
+    },
+    {
+      "suit": "hearts",
+      "path":"/cards/9H.png","value": 9
+    },
+    {
+      "suit": "hearts",
+      "path":"/cards/10H.png","value": 10
+    },
+    {
+      "suit": "hearts",
+      "path":"/cards/JH.png","value": "J"
+    },
+    {
+      "suit": "hearts",
+      "path":"/cards/QH.png","value": "Q"
+    },
+    {
+      "suit": "hearts",
+      "path":"/cards/KH.png","value": "K"
+    },
+    {
+      "suit": "hearts",
+      "path":"/cards/AH.png","value": "A"
+    },
+    {
+      "suit": "diamonds",
+      "path":"/cards/2D.png","value": 2
+    },
+    {
+      "suit": "diamonds",
+      "path":"/cards/3D.png","value": 3
+    },
+    {
+      "suit": "diamonds",
+      "path":"/cards/4D.png","value": 4
+    },
+    {
+      "suit": "diamonds",
+      "path":"/cards/5D.png","value": 5
+    },
+    {
+      "suit": "diamonds",
+      "path":"/cards/6D.png","value": 6
+    },
+    {
+      "suit": "diamonds",
+      "path":"/cards/7D.png","value": 7
+    },
+    {
+      "suit": "diamonds",
+      "path":"/cards/8D.png","value": 8
+    },
+    {
+      "suit": "diamonds",
+      "path":"/cards/9D.png","value": 9
+    },
+    {
+      "suit": "diamonds",
+      "path":"/cards/10D.png","value": 10
+    },
+    {
+      "suit": "diamonds",
+      "path":"/cards/JD.png","value": "J"
+    },
+    {
+      "suit": "diamonds",
+      "path":"/cards/QD.png","value": "Q"
+    },
+    {
+      "suit": "diamonds",
+      "path":"/cards/KD.png","value": "K"
+    },
+    {
+      "suit": "diamonds",
+      "path":"/cards/AD.png","value": "A"
+    },
+    {
+      "suit": "clubs",
+      "path":"/cards/2C.png","value": 2
+    },
+    {
+      "suit": "clubs",
+      "path":"/cards/3C.png","value": 3
+    },
+    {
+      "suit": "clubs",
+      "path":"/cards/4C.png","value": 4
+    },
+    {
+      "suit": "clubs",
+      "path":"/cards/5C.png","value": 5
+    },
+    {
+      "suit": "clubs",
+      "path":"/cards/6C.png","value": 6
+    },
+    {
+      "suit": "clubs",
+      "path":"/cards/7C.png","value": 7
+    },
+    {
+      "suit": "clubs",
+      "path":"/cards/8C.png","value": 8
+    },
+    {
+      "suit": "clubs",
+      "path":"/cards/0C.png","value": 9
+    },
+    {
+      "suit": "clubs",
+      "path":"/cards/10C.png","value": 10
+    },
+    {
+      "suit": "clubs",
+      "path":"/cards/JC.png","value": "J"
+    },
+    {
+      "suit": "clubs",
+      "path":"/cards/QC.png","value": "Q"
+    },
+    {
+      "suit": "clubs",
+      "path":"/cards/KC.png","value": "K"
+    },
+    {
+      "suit": "clubs",
+      "path":"/cards/AC.png","value": "A"
+    },
+    {
+      "suit": "spades",
+      "path":"/cards/2S.png","value": 2
+    },
+    {
+      "suit": "spades",
+      "path":"/cards/S3.png","value": 3
+    },
+    {
+      "suit": "spades",
+      "path":"/cards/4S.png","value": 4
+    },
+    {
+      "suit": "spades",
+      "path":"/cards/5S.png","value": 5
+    },
+    {
+      "suit": "spades",
+      "path":"/cards/6S.png","value": 6
+    },
+    {
+      "suit": "spades",
+      "path":"/cards/7S.png","value": 7
+    },
+    {
+      "suit": "spades",
+      "path":"/cards/8S.png","value": 8
+    },
+    {
+      "suit": "spades",
+      "path":"/cards/9S.png","value": 9
+    },
+    {
+      "suit": "spades",
+      "path":"/cards/10s.png","value": 10
+    },
+    {
+      "suit": "spades",
+      "path":"/cards/JS.png","value": "J"
+    },
+    {
+      "suit": "spades",
+      "path":"/cards/QS.png","value": "Q"
+    },
+    {
+      "suit": "spades",
+      "path":"/cards/KS.png","value": "K"
+    },
+    {
+      "suit": "spades",
+      "path":"/cards/AS.png","value": "A"
+    }
+  ]
