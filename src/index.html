@@ -5,185 +5,100 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=100%, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Blackjack</title>
+  <title>Ping Pong</title>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
   <style>
-    .home-main {
-      background: #5812c5;
-      color: #fff;
-      padding: 13%;
+    #playerScoreA {
+      font-size: 100px;
       text-align: center;
+      padding: 20px;
+      margin: 20px;
+      border: 2px solid black;
+      border-radius: 10px;
+      height: 200px;
+      cursor: pointer;
+
     }
 
-    .blinker {
-      animation: blinker 1.5s linear infinite;
-    }
-
-    @keyframes blinker {
-      50% {
-        opacity: 0;
-      }
-    }
-
-    .home-main button {
-      background: #fff;
-      color: #5812c5;
-      border-radius: 0;
-      font-weight: 700;
-      width: 16%;
-      height: 50px;
-      top: 4%;
-      margin-top: 3%;
-    }
-
-    .home-main button:hover {
-      transition: 1s ease;
-      color: #5812c5;
-      width: 19%;
-    }
-
-    .content1-left {
-      padding: 9%;
-    }
-
-    .content1-right {
-      padding: 9%;
-      background: #e4e4e4;
-    }
-
-    .home-content2 {
-      background: #adb5bd;
-      padding: 1.4%;
+    #playerScoreB {
+      font-size: 100px;
       text-align: center;
+      padding: 20px;
+      margin: 20px;
+      border: 2px solid black;
+      border-radius: 10px;
+      height: 200px;
+      cursor: pointer;
     }
 
-    .home-content2 p {
-      font-size: 18px;
-      line-height: 50px;
+    #playeraName {
+      font-size: 50px
     }
 
-    .home-content2 p span {
-      font-weight: 500;
-    }
-
-
-
-    #game {
-      /* position: absolute;
-      left: 0px;
-      top: 0px; */
-      width: 420px;
-      margin-top: 0px;
-      border-radius: 5px
+    #playerbName {
+      font-size: 50px
     }
   </style>
 
 </head>
 
-<body onload="start()" style="background-color: #E4E4E4;">
-    <div id="mytotal"  class="float-left" style="padding-left: 15px;height:75px;width:75px;font-size:50px;background-color: black;color: white"></div>
-    <div id="dealertotal" class="float-right" style="padding-left: 15px;height:75px;width:75px;font-size:50px;background-color: black;color: white"></div>
-
-  <div class="container-fluid home-content1">
-      <div class="row" id="acerow" style="display:none">
-          <div class="col-sm-12" style="text-align: center;">
-            <label>Make the Ace equal to: </label>
-            <button id="make1" class="btn btn-info">1</button>
-            <button id="make11" class="btn btn-info">11</button>
-          </div>
-        </div>
-    <div class="row">
-      <div style="margin-top:-50px" class="col-md-6 content1-left">
-
-        <div id="game" class="container">
-          <div class="row">
-            <div class="col-sm-12" style="text-align: left">
-
-              <button id="hitme" class="btn btn-success">Hit Me</button>
-              <button id="hold" class="btn btn-info">Hold</button>
-              <button id="deal" class="btn btn-outline-dark">Deal</button>
-
-            </div>
-
-
-          </div>
-          <div class="row">
-            <div class="col-lg-12">
-              <div id="cardone" style="position: relative;top: 50px;left: 50px"></div>
-
-              <div id="cardtwo" style="position: relative;top: 50px;left: 75px;margin-top: -250px"></div>
-
-              <div id="cardthree" style="position: relative;top: 50px;left: 105px;margin-top: -250px"></div>
-
-              <div id="cardfour" style="position: relative;top: 50px;left: 130px;margin-top: -250px"></div>
-
-              <div id="cardfive" style="position: relative;top: 50px;left: 155px;margin-top: -250px"></div>
-
-              <div id="cardsix" style="position: relative;top: 50px;left: 180px;margin-top: -250px"></div>
-            </div>
-          </div>
-
-        </div>
+<body>
+  <div class="container">
+    <div class="row" style="padding: 20px">
+      <div class="col-4" style="text-align: left">
+        <h4 id="playeraName"></h4>
       </div>
-      <div class="col-md-6 content1-right">
+      <div class="col-4" style="text-align: center"><img
+          src="http://www.pngall.com/wp-content/uploads/2016/05/Ping-Pong.png" width="100" /></div>
+      <div class="col-4" style="text-align: right">
+        <h4 id="playerbName"></h4>
+      </div>
 
-        <div class="container">
+    </div>
 
-          <div class="row">
-            <div class="col-lg-12">
-              <div id="dealercardone" style="position: relative;top: 50px;left: 50px"></div>
+    <div class="row">
+      <div class="col-6">
+        <div id="playerScoreA"></div>
 
-              <div id="dealercardtwo" style="position: relative;top: 50px;left: 75px;margin-top: -250px"></div>
-
-              <div id="dealercardthree" style="position: relative;top: 50px;left: 100px;margin-top: -250px"></div>
-
-              <div id="dealercardfour" style="position: relative;top: 50px;left: 125px;margin-top: -250px"></div>
-
-              <div id="dealercardfive" style="position: relative;top: 50px;left: 150px;margin-top: -250px"></div>
-
-              <div id="dealercardsix" style="position: relative;top: 50px;left: 175px;margin-top: -250px"></div>
-            </div>
-          </div>
-
-
-          <div class="row" id="acerow" style="display:none;margin-top: -200px;">
-            <div class="col-sm-12" style="text-align: center;">
-              <label>Make the Ace equal to </label>
-              <button id="make1" class="btn btn-info">1</button>
-              <button id="make11" class="btn btn-info">11</button>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-sm-12">
-              <div style="margin-top: 20px;padding-left: 15px;font-size: 20px;height: 250px;overflow: scroll"
-                id="wordsHolder"></div>
-            </div>
-          </div>
-
-
-        </div>
+      </div>
+      <div class="col-6">
+        <div id="playerScoreB"></div>
       </div>
     </div>
-  </div>
-  <div class="container-fluid home-content2">
-    <div class="row">
-      <div class="col-lg-4">
-        <div style="font-size: 30px;" id="score"></div>
-
+    <div class="row" id="namesRow">
+      <div class="col-6">
+        <input style="height: 50px;font-size: 50px" type="text" placeholder="player one" class="form-control"
+          id="playerA" />
       </div>
-      <div class="col-lg-4">
-          <div style="font-size: 30px;" id="winner"></div>
-  
-        </div>
-      <div class="col-lg-4">
-        <div style="font-size: 30px;" id="dealerscore"></div>
-
+      <div class="col-6">
+        <input style="height: 50px;font-size: 50px" type="text" placeholder="player two" class="form-control"
+          id="playerB" />
       </div>
+    </div>
+    <br />
+    <div class="row" id="button-row">
+      <div class="col-6">
+        <button class="btn btn-success" id="start11" style="width: 100%;hei">Game to 11</button>
+      </div>
+      <div class="col-6">
+        <button class="btn btn-success" id="start21" style="width: 100%">Game to 21</button>
+      </div>
+    </div>
+    <div class="row" id="reset-row" style="display:none">
+      <div class="col-12">
+        <button class="btn btn-success" id="reset" style="width: 100%">reset</button>
+      </div>
+
+    </div>
+    <div class="row" id="timer-row">
+      <div class="col-12">
+        <div id="scoreboard" style="height: 300px;overflow: scroll;margin-top: 50px;width: 100%"></div>
+      </div>
+
     </div>
   </div>
 </body>
